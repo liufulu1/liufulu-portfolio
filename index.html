@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="视觉设计师 / AI 设计师 / 品牌设计师 — 个人作品集" />
+    
+    <!-- 预连接到字体域名 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- 预加载关键资源 -->
+    <link rel="preload" href="/hero-bg.jpg" as="image" />
+    <link rel="preload" href="/favicon.svg" as="image" />
+    
+    <!-- 字体加载优化：添加display=swap避免FOIT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    
+    <title>STUDIO — 视觉 / AI / 品牌设计</title>
+    
+    <!-- 内联关键CSS，避免首屏闪烁 -->
+    <style>
+      html, body { margin: 0; padding: 0; background: #050607; }
+      #root { min-height: 100vh; }
+      .noise-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        pointer-events: none;
+        opacity: 0.03;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-IqoEWm2L.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CoryG4Fq.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
